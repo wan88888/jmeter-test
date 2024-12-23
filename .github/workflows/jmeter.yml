@@ -27,7 +27,7 @@ jobs:
     - name: Run JMeter Test
       run: |
         mkdir -p jmeter-results
-        /opt/jmeter/bin/jmeter -n -t your-test-file.jmx -l jmeter-results/results.jtl
+        /opt/jmeter/bin/jmeter -n -t test.jmx -l jmeter-results/results.jtl
         /opt/jmeter/bin/jmeter -g jmeter-results/results.jtl -o jmeter-results/html-report
         echo "JMeter Test and Report Generation Completed"
 
